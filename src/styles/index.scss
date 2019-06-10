@@ -1,0 +1,68 @@
+$black: #000000;
+$black90: #1E1E1E;
+$black-80: #4A4A49;
+
+$white: #FFFFFF;
+$white-90: #FBFAF7;
+
+$yellow: #FFA51E;
+$green: #00AA46;
+$purple: #7D00FF;
+
+$typeface: SuisseIntl;
+
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('/public/assets/fonts/SuisseIntl-SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('/public/assets/fonts/SuisseIntl-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/public/assets/fonts/SuisseIntl-SemiBold.woff') format('woff'), /* Modern Browsers */
+       url('/public/assets/fonts/SuisseIntl-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/public/assets/fonts/SuisseIntl-SemiBold.svg#SuisseIntl-SemiBold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('/public/assets/fonts/SuisseIntl.eot'); /* IE9 Compat Modes */
+  src: url('/public/assets/fonts/SuisseIntl.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/public/assets/fonts/SuisseIntl.woff') format('woff'), /* Modern Browsers */
+       url('/public/assets/fonts/SuisseIntl.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/public/assets/fonts/SuisseIntl.svg#SuisseIntl') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+
+body {
+  background-color: $white-90;
+  font-family: $typeface;
+}
+
+h1 {
+  font-size: 40/16 + rem;
+}
+
+h2 {
+  font-size: 40/16 + rem;
+}
+
+h3 {
+  font-size: 24/16 + rem;
+}
+
+
+// Vendor
+@import "/vendor/normalize";
+
+
+// Layout
+@import "/layout/grid";
+
+
+// Components
+@import "/components/header";
+
