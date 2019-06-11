@@ -18,7 +18,7 @@ h2 {
 h3, h4 {
     font-size: 26/16 + rem;
     margin-bottom: $spacing-m;
-    margin-top: $spacing-xl;
+    margin-top: 0;
 }
 
 // Icon + title 
@@ -46,7 +46,7 @@ h3, h4 {
 
     .icon-title__title {
         margin: 0;
-        margin-left: $spacing-xxs;
+        margin-left: $spacing-xs;
     }
 }
 

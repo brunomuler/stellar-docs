@@ -30,7 +30,11 @@ $bullet-color: $primary-color;
     }
 }
 
-.step-list {
+.step {
+    margin-bottom: $spacing-xl;
+}
+
+.steps-list {
     margin: 0;
     padding: 0;
     
@@ -38,9 +42,28 @@ $bullet-color: $primary-color;
         list-style: none;
         display: flex;
         align-items: center;
+        margin-bottom: $spacing-m;
 
-        &:not(:last-child) {
-            margin-bottom: $spacing-m;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    li.step-list__bullet {
+        padding-left: 22px;
+        position: relative;
+        line-height: 22/16 + rem;
+
+        &:before {
+            content:"";
+            width: $bullet-size;
+            height: $bullet-size;
+            background-color: $primary-color;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top:  4/16 + rem;
         }
     }
     
@@ -49,7 +72,7 @@ $bullet-color: $primary-color;
     }
     
     .step-list__icon {
-        max-width: 40px;
+        min-width: 40px;
     }
     
     .step-list__arrow {
