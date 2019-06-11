@@ -1,7 +1,8 @@
 // Blacks
 $black: #000000;
-$black90: #1E1E1E;
+$black-90: #1E1E1E;
 $black-80: #4A4A49;
+$black-20: #CCCCCC;
 
 // Whites
 $white: #FFFFFF;
@@ -55,6 +56,11 @@ body {
 a {
   color: $black-80;
   font-weight: bold;
+  transition: color 0.15s ease-out;
+
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 // Vendor
@@ -71,4 +77,9 @@ a {
 @import "/components/titles";
 @import "/components/header";
 @import "/components/lists";
+@import "/components/card";
+@import "/components/link";
+@import "/components/outline";
 
+// Pages
+@import "/pages/cross-border";

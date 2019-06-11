@@ -1,4 +1,4 @@
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: bold;
     color: $black;
 }
@@ -12,13 +12,46 @@ h1 {
 h2 {
     font-size: 40/16 + rem;
     margin-bottom: $spacing-l;
+    margin-top: $spacing-xxl;
 }
 
-h3 {
+h3, h4 {
     font-size: 26/16 + rem;
+    margin-bottom: $spacing-m;
+    margin-top: $spacing-xl;
+}
+
+// Icon + title 
+.icon-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-l;
+
+    .icon-title__icon-circle {
+        background-color: $primary-color;
+        border-radius: 50%;
+        min-width: 50/16 + rem;
+        height: 50/16 + rem;
+        font-size: 24/16 + rem;
+        font-weight: bold;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-title__icon {
+
+    }
+
+    .icon-title__title {
+        margin: 0;
+        margin-left: $spacing-xxs;
+    }
 }
 
 
+// Highlights
 .highlight-primary {
     color: $primary-color;
 }

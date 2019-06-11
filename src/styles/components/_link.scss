@@ -1,0 +1,21 @@
+.arrow-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $black;
+    font-size: 18/16 + rem;
+    line-height: 22/16 + rem;
+    &:hover {
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    &:before {
+        content: "→";
+        display: inline;
+        color: $primary-color;
+        font-size: 24/16 +rem;
+        line-height: 1rem;
+        padding-right: 5px;
+    }
+}

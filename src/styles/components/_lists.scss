@@ -3,14 +3,18 @@ $bullet-color: $primary-color;
 
 .bullet-list {
     margin: 0;
+    margin-bottom: $spacing-m;
     padding: 0;
 
     li {
         list-style: none;
         padding-left: 22px;
-        margin-bottom: $spacing-s;
         position: relative;
         line-height: 22/16 + rem;
+
+        &:not(:last-child) {
+            margin-bottom: $spacing-s;
+        }
     }
 
     li:before {
@@ -23,5 +27,36 @@ $bullet-color: $primary-color;
         position: absolute;
         left: 0;
         top:  4/16 + rem;
+    }
+}
+
+.step-list {
+    margin: 0;
+    padding: 0;
+    
+    li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: $spacing-m;
+        }
+    }
+    
+    .step-list__icons {
+        display: flex;
+    }
+    
+    .step-list__icon {
+        max-width: 40px;
+    }
+    
+    .step-list__arrow {
+        padding: 0 $spacing-xxs;
+    }
+
+    .step-list__text {
+        margin-left: $spacing-m;
     }
 }
