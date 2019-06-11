@@ -6,6 +6,8 @@ $padding:$spacing-s;
     border-radius: $border-radius;
     border: 0.5px solid $black-20;
     padding: $padding;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__arrow-link {
