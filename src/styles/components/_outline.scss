@@ -1,15 +1,57 @@
+$bullet-size: 6/16 + rem;
+
 .outline {
+    margin: 0;
+    padding: 0;
+    margin-right: $spacing-s;
 
-}
+    a {
+        text-decoration: none;
+        display: block;
+    }
 
-.outline__section {
-    
-}
+    li {
+        list-style: none;
+        font-size: 21/16 + rem;
 
-.outline__title {
-    
-}
+        li {
+            font-size: 14/16 + rem;
+            position: relative;
+            padding-left: 18px;
 
-.outline__subtitle {
-    
+            a {
+                font-weight: normal;
+                padding-bottom: $spacing-xs;
+            }
+
+            &:before {
+                content:"";
+                width: $bullet-size;
+                height: $bullet-size;
+                border: 1.5px solid $black-20;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top:  4/16 + rem;
+            }
+        }
+    }
+
+    > li {
+        border-bottom: 0.5px solid $black-20;
+
+        &>a {
+            padding: $spacing-s 0;
+        }
+
+        &:first-child {
+            border-top: 0.5px solid $black-20;
+        }
+    }
+
+    ul {
+        padding: 0;
+        padding-bottom: $spacing-xs;
+    }
 }
