@@ -1,4 +1,11 @@
 header {
-    background-color: $black90;
-  }
-  
+  background-color: $black90;
+  padding-top: $spacing-m;
+  padding-bottom: $spacing-m;
+  margin-bottom:  $spacing-xxl;
+} 
+
+.header__title {
+  max-width: 900px;
+  color: $white;
+}

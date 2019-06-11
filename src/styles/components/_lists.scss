@@ -1,0 +1,27 @@
+$bullet-size: 12 /16 + rem;
+$bullet-color: $primary-color;
+
+.bullet-list {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+        padding-left: 22px;
+        margin-bottom: $spacing-s;
+        position: relative;
+        line-height: 22/16 + rem;
+    }
+
+    li:before {
+        content:"";
+        width: $bullet-size;
+        height: $bullet-size;
+        background-color: $primary-color;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top:  4/16 + rem;
+    }
+}

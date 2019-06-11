@@ -7,23 +7,49 @@
 </head>
 <body>
   <header>
-    <image src="public/assets/images/stellar_logo.svg">
-    <h1>How user-to-user cross-border payments work on Stellar</h1>
+    <div class="wrap container">
+      <image class="header__logo" src="public/assets/images/stellar_logo.svg">
+      <h1  class="header__title" >How user-to-user cross-border payments work on <span class="highlight-primary">Stellar</span></h1>
+    </div> 
   </header>
-  <div>
-    <h2>Intro</h2>
-    <ul>
-      <li>Laura in the USA wants to send money to Victor in Brazil.</li>
+  <div class="wrap">
+    <section class="container">
+      <h2>Overview</h2>
+      <div class="row">
+        <div class="col-xs-6">
+          <ul class="bullet-list">
+            <li>Laura in the USA wants to send money to Victor in Brazil.</li>
+      
+            <li>Both Laura and Victor already have digital wallets they use to store, transfer, and trade Stellar-network tokens.</li>
+      
+            <li>Laura wants to send her local currency, USD, but Victor wants to receive his local currency, BRL. </li>
+      
+            <li>The following diagram shows how that payment – which involves 2 users, 2 wallets, and 2 anchors – unfolds on Stellar.</li>
+      
+            <li>It assumes both wallets and both anchors support <a href="https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0006.md">SEP-6</a> and <a href="https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0012.md">SEP-12</a>. The anchor to wallet interactions are all handled via API.</li>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-4 col-xs-offset-1">
+          <img src="public/assets/images/globe_illustration.png" srcset="public/assets/images/globe_illustration.png 1x, public/assets/images/globe_illustration@2x.png 2x" alt="Globe Illustration" >
+        </div>
+      </div>
+    </section>
 
-      <li>Both Laura and Victor already have digital wallets they use to store, transfer, and trade Stellar-network tokens.</li>
-
-      <li>Laura wants to send her local currency, USD, but Victor wants to receive his local currency, BRL. </li>
-
-      <li>The following diagram shows how that payment – which involves 2 users, 2 wallets, and 2 anchors – unfolds on Stellar.</li>
-
-      <li>It assumes both wallets and both anchors support SEP-6 and SEP-12.  The anchor to wallet interactions are all handled via API.</li>
-      </li>
-    </ul>
+    <section>
+      <h2>The process on the user’s perspective</h2>
+      <div class="row">
+        <div class="col-xs-4">
+          Hello
+        </div>
+        <div class="col-xs-4">
+            Hello
+          </div>
+          <div class="col-xs-4">
+              Hello
+          </div>
+      </div>
+    </section>
   </div>
   
   

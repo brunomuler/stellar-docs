@@ -1,16 +1,23 @@
+// Blacks
 $black: #000000;
 $black90: #1E1E1E;
 $black-80: #4A4A49;
 
+// Whites
 $white: #FFFFFF;
 $white-90: #FBFAF7;
 
+
+// Brand colors
 $yellow: #FFA51E;
 $green: #00AA46;
 $purple: #7D00FF;
 
-$typeface: SuisseIntl;
+//Semantic names
+$primary-color: $yellow;
 
+// typeface
+$typeface: SuisseIntl;
 
 @font-face {
   font-family: 'SuisseIntl';
@@ -19,8 +26,8 @@ $typeface: SuisseIntl;
        url('/public/assets/fonts/SuisseIntl-SemiBold.woff') format('woff'), /* Modern Browsers */
        url('/public/assets/fonts/SuisseIntl-SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/public/assets/fonts/SuisseIntl-SemiBold.svg#SuisseIntl-SemiBold') format('svg'); /* Legacy iOS */
-  font-style: normal;
-  font-weight: normal;
+  font-style: bold;
+  font-weight: 700;
   text-rendering: optimizeLegibility;
 }
 
@@ -32,28 +39,23 @@ $typeface: SuisseIntl;
        url('/public/assets/fonts/SuisseIntl.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/public/assets/fonts/SuisseIntl.svg#SuisseIntl') format('svg'); /* Legacy iOS */
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 
-
 body {
+  font-size: 1rem;
+  color: $black-80;
   background-color: $white-90;
   font-family: $typeface;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: 40/16 + rem;
+a {
+  color: $black-80;
+  font-weight: bold;
 }
-
-h2 {
-  font-size: 40/16 + rem;
-}
-
-h3 {
-  font-size: 24/16 + rem;
-}
-
 
 // Vendor
 @import "/vendor/normalize";
@@ -61,8 +63,12 @@ h3 {
 
 // Layout
 @import "/layout/grid";
+@import "/layout/spacing";
+@import "/layout/layout";
 
 
 // Components
+@import "/components/titles";
 @import "/components/header";
+@import "/components/lists";
 

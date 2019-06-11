@@ -1,0 +1,24 @@
+h1, h2, h3 {
+    font-weight: bold;
+    color: $black;
+}
+
+h1 {
+    font-size: 54/16 + rem;
+    margin-bottom: $spacing-xl;
+    letter-spacing: -1 / 16 + rem;
+}
+
+h2 {
+    font-size: 40/16 + rem;
+    margin-bottom: $spacing-l;
+}
+
+h3 {
+    font-size: 26/16 + rem;
+}
+
+
+.highlight-primary {
+    color: $primary-color;
+}
