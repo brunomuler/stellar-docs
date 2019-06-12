@@ -41,11 +41,16 @@ $bullet-color: $primary-color;
     li{
         list-style: none;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         margin-bottom: $spacing-m;
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: $break-xs) {
+            flex-direction: row;
+            align-items: center;
         }
     }
 
@@ -77,9 +82,15 @@ $bullet-color: $primary-color;
     
     .step-list__arrow {
         padding: 0 $spacing-xxs;
+        min-width: 40px;
     }
 
     .step-list__text {
-        margin-left: $spacing-m;
+        margin-top: $spacing-xxs;
+
+        @media only screen and (min-width: $break-xs) {
+            margin-top: 0;
+            margin-left: $spacing-m;
+        }
     }
 }

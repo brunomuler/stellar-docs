@@ -1,8 +1,11 @@
 header {
   background-color: $black-90;
   padding-top: $spacing-m;
-  padding-bottom: $spacing-m;
-  margin-bottom:  $spacing-xxl;
+  padding-bottom: $spacing-xs;
+  
+  @media only screen and (min-width: $break-sm) {
+    padding-bottom: $spacing-m;
+  }
 } 
 
 .header__title {

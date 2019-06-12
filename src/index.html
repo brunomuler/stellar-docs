@@ -31,31 +31,33 @@
   <div class="wrap">
     <section class="container-fluid">
       <h2>Overview</h2>
-      <div class="row">
-        <div class="col-xs-6">
+      <div class="row reverse">
+        <div class="col-xs-12 col-sm-4 col-md-offset-2">
+          <div class="globe-img">
+            <img src="public/assets/images/globe_illustration.png" srcset="public/assets/images/globe_illustration.png 1x, public/assets/images/globe_illustration@2x.png 2x" alt="Globe Illustration">
+        </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
           <ul class="bullet-list">
             <li>Laura in the USA wants to send money to Victor in Brazil.</li>
       
             <li>Both Laura and Victor already have digital wallets they use to store, transfer, and trade Stellar-network tokens.</li>
       
-            <li>Laura wants to send her local currency, USD, but Victor wants to receive his local currency, BRL. </li>
+            <li>Laura wants to send her local currency, USD, but Victor wants to receive his local currency, BRL.</li>
       
-            <li>The following diagram shows how that payment – which involves 2 users, 2 wallets, and 2 anchors – unfolds on Stellar.</li>
+            <li>The following diagram shows how that payment – which involves 2 users, 2 wallets, and 2 anchors – unfolds on Stellar</li>
       
-            <li>It assumes both wallets and both anchors support <a href="https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0006.md" target="_blank">SEP-6</a> and <a href="https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0012.md" target="_blank">SEP-12</a>. The anchor to wallet interactions are all handled via API.</li>
+            <li>It assumes both wallets and both anchors support <a href="https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0006.md" target="_blank">SEP-6</a> and <a href="https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0012.md" target="_blank">SEP-12</a>, and  <a href="https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0010.md" target="_blank">SEP-10</a>. The anchor to wallet interactions are all handled via API.</li>
             </li>
           </ul>
-        </div>
-        <div class="col-xs-4 col-xs-offset-1">
-          <img src="public/assets/images/globe_illustration.png" srcset="public/assets/images/globe_illustration.png 1x, public/assets/images/globe_illustration@2x.png 2x" alt="Globe Illustration" >
         </div>
       </div>
     </section>
 
     <section class="container-fluid">
-      <h2>The process on the user’s perspective</h2>
+      <h2>What the user sees</h2>
       <div class="row">
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-4">
           <div class="card device-screen-card">
             <div>
               <div class="icon-title">
@@ -72,19 +74,21 @@
                 <img  src="public/assets/images/app_screen_01.png" srcset="public/assets/images/app_screen_01.png 1x, public/assets/images/app_screen_01@2x.png 2x" alt="Deposit screen">
               </div>
               <ul class="bullet-list">
-                  <li>Laura enters the amount she'd like to deposit.</li>
-                  <li>She enters her KYC info.</li>
-                  <li>She gets info on where to send her money.</li>
-                  <li>She gets tokens in her wallet.</li>
+                  <li>Laura clicks “Make a deposit” in her wallet app</li>
+                  <li>Enters the amount of USD she’d like to deposit</li>
+                  <li>Enters her KYC info</li>
+                  <li>Receives deposit instructions</li>
+                  <li>Transfers funds via ACH</li>
+                  <li>Receives USD tokens in her wallet</li>
               </ul>
             </div>
             <a class="arrow-link  card__arrow-link" href="#">
-              <span>See how it happens in the background</span>
+              <span>See what happens in the background</span>
             </a>
           </div>
         </div>
 
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-4">
             <div class="card device-screen-card">
               <div>
                 <div class="icon-title">
@@ -101,19 +105,22 @@
                   <img  src="public/assets/images/app_screen_02.png" srcset="public/assets/images/app_screen_02.png 1x, public/assets/images/app_screen_02@2x.png 2x" alt="Deposit screen">
                 </div>
                 <ul class="bullet-list">
-                    <li>Laura enters the amount she'd like to deposit.</li>
-                    <li>She enters her KYC info.</li>
-                    <li>She gets info on where to send her money.</li>
+                    <li>Laura clicks “Make a payment” in her wallet app</li>
+                    <li>Enters Victor’s wallet address</li>
+                    <li>Chooses to send USD</li>
+                    <li>And for Victor to receive BRL</li>
+                    <li>Confirms the payment</li>
+                    <li>Victor receives the payment in his wallet a few seconds later</li>
                 </ul>
               </div>
 
-              <a class="arrow-link  card__arrow-link" href="#">
-                <span>See how it happens in the background</span>
+              <a class="arrow-link card__arrow-link" href="#">
+                <span>See what happens in the background</span>
               </a>
             </div>
           </div>
 
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-sm-4">
               <div class="card device-screen-card">
                 <div>
                   <div class="icon-title">
@@ -130,14 +137,16 @@
                     <img  src="public/assets/images/app_screen_03.png" srcset="public/assets/images/app_screen_03.png 1x, public/assets/images/app_screen_03@2x.png 2x" alt="Deposit screen">
                   </div>
                   <ul class="bullet-list">
-                      <li>Laura enters the amount she'd like to deposit.</li>
-                      <li>She enters her KYC info.</li>
-                      <li>She gets info on where to send her money.</li>
-                      <li>She gets tokens in her wallet.</li>
+                      <li>Victor clicks “Make a withdrawal” in his wallet app</li>
+                      <li>Selects the amount of BRL he’d like to withdraw</li>
+                      <li>Enters his KYC info</li>
+                      <li>Enters his bank account info</li>
+                      <li>Confirms the withdrawal</li>
+                      <li>Receives BRL in his bank account via ACH</li>  
                   </ul>
                 </div>
                 <a class="arrow-link card__arrow-link" href="#">
-                  <span>See how it happens in the background</span>
+                  <span>See what happens in the background</span>
                 </a>
               </div>
             </div>
@@ -146,14 +155,14 @@
     </section>
 
     <section class="container-fluid">
-        <h2>Here’s what happens in the background</h2>
+        <h2>What happens in the background</h2>
         <div class="row">
             <!-- 
               
               Outline Menu
 
               -->
-            <div class="col-xs-3">
+            <div class="col-xs-3 visible-md">
               <ul class="outline">
                 <li>
                   <a href="#step1">1. Laura Funds her account</a>
@@ -174,13 +183,13 @@
                   <a href="#step2">2. Laura sends money to Victor</a>
                   <ul>
                     <li>
-                      <a href="#step2a">Laura starts transfer</a>
+                      <a href="#step2a">Laura makes the payment</a>
                     </li>
                     <li>
                       <a href="#step2b">USD-to-BRL conversion</a>
                     </li>
                     <li>
-                      <a href="#step2c">Transfer is complete</a>
+                      <a href="#step2c">Payment is complete</a>
                     </li>
                   </ul>
                 </li>
@@ -202,7 +211,7 @@
 
               </ul>
             </div> <!-- End of outline menu -->
-            <div class="col-xs-9">
+            <div class="col-xs-12 col-md-9">
               
               <!-- 
               
@@ -233,7 +242,17 @@
                           <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                          The wallet pings AnchorUSA's <strong>Transfer Server</strong> with info about Laura, and about the deposit she'd like to make.
+                            The wallet pings USAnchor’s <strong>Transfer Server</strong> and discovers that it requires an authenticated user session to proceed
+                        </div>
+                      </li>
+                      <li>
+                        <div class="step-list__icons">
+                          <img class="step-list__icon" src="public/assets/images/ico_phone.png" srcset="public/assets/images/ico_phone.png 1x, public/assets/images/ico_phone@2x.png 2x" alt="Phone icon">
+                          <img class="step-list__arrow" src="public/assets/images/ico_arrow_right.svg"  alt="Arrow right">
+                          <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
+                        </div>
+                        <div class="step-list__text">
+                            The wallet pings USAnchor’s <strong>WEB_AUTH_ENDPOINT</strong>, goes through challenge/response, receives a JWT token to authenticate the user session
                         </div>
                       </li>
                       <li>
@@ -243,7 +262,19 @@
                           <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                            AnchorUSA's <strong>Transfer Server</strong> responds and requests whatever additional information it might need about Laura or her transfer. Since, in our example, AnchorUSA requires KYC info, it includes the required KYC fields in the response.
+                            The wallet pings USAnchor's <strong>Transfer Server</strong> with Laura’s Stellar account, and with the amount and type of deposit she’d like to make
+
+                        </div>
+                      </li>
+                      <li>
+                        <div class="step-list__icons">
+                          <img class="step-list__icon" src="public/assets/images/ico_phone.png" srcset="public/assets/images/ico_phone.png 1x, public/assets/images/ico_phone@2x.png 2x" alt="Phone icon">
+                          <img class="step-list__arrow" src="public/assets/images/ico_arrow_left.svg"  alt="Arrow left">
+                          <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
+                        </div>
+                        <div class="step-list__text">
+                            USAnchor's <strong>Transfer Server</strong> responds and requests required KYC info.
+                            The wallet prompts Laura to enter KYC info.                            
                         </div>
                       </li>
                       <li class="step-list__bullet">Laura opens her wallet app and enters the amount of USD she'd like to deposit.</li>
@@ -255,7 +286,7 @@
                   <div class="card steps-card"  id="step1b">
                     <h4>Laura's KYC verification</h4>
                     <ul class="steps-list">
-                      <li class="step-list__bullet">Laura is prompted to upload the required KYC info to her wallet. If she uploaded it for a previous transaction, the wallet may already have that info on hand.</li>
+                      <li class="step-list__bullet">Laura enters the required KYC info into her wallet. If she uploaded it for a previous transaction, the wallet may already have that info on hand.</li>
                       <li >
                         <div class="step-list__icons">
                           <img class="step-list__icon" src="public/assets/images/ico_phone.png" srcset="public/assets/images/ico_phone.png 1x, public/assets/images/ico_phone@2x.png 2x" alt="Phone icon">
@@ -263,7 +294,7 @@
                           <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                          The wallet sends Laura’s KYC info to AnchorUSA’s /customer endpoint.
+                          The wallet uploads Laura’s KYC info to USAnchor’s <strong>/customer</strong> endpoint.
                         </div>
                       </li>
                       <li>
@@ -273,10 +304,10 @@
                           <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                            The anchor analyzes Laura’s KYC info -- how they do that is up to them -- and lets the wallet know if Laura passes. If she doesn’t, they let the wallet know why.
+                            USAnchor’s <strong>/customer</strong> endpoint lets the wallet know the upload was a success
+                            USAnchor analyzes Laura’s KYC info — how they do that is up to them.
                         </div>
                       </li>
-                      <li class="step-list__bullet">If Laura passes KYC, the wallet app lets her know she can continue her deposit. If she needs to provide additional info to pass KYC, the app gives her a chance to do that, too.</li>
                     </ul>
                   </div>
                 </div>
@@ -285,17 +316,40 @@
                   <div class="card steps-card"  id="step1c">
                     <h4>Laura deposits USD and receives USD tokens</h4>
                     <ul class="steps-list">
-                      <li class="step-list__bullet">Laura completes her USD deposit to AnchorUSA's account via ACH, wire, or whatever method AnchorUSD supports. That transfer happens on a traditional banking system, so it can take a few days.</li>
                       <li>
                         <div class="step-list__icons">
                           <img class="step-list__icon" src="public/assets/images/ico_phone.png" srcset="public/assets/images/ico_phone.png 1x, public/assets/images/ico_phone@2x.png 2x" alt="Phone icon">
-                          <img class="step-list__arrow" src="public/assets/images/ico_arrow_left.svg"  alt="Arrow right">
+                          <img class="step-list__arrow" src="public/assets/images/ico_arrow_right.svg"  alt="Arrow right">
                           <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                            AnchorUSA detects Laura’s deposit as it arrives and transfers USD tokens to her wallet’s Stellar account. That transfer happens on the Stellar network, so it just takes a few seconds.
+                            When Laura passes USAnchor’s KYC check, her wallet pings USAnchor’'s <strong>Transfer Server</strong> again with Laura’s Stellar account, and the amount and type of deposit she’d like to make
                         </div>
                       </li>
+                      <li>
+                        <div class="step-list__icons">
+                          <img class="step-list__icon" src="public/assets/images/ico_phone.png" srcset="public/assets/images/ico_phone.png 1x, public/assets/images/ico_phone@2x.png 2x" alt="Phone icon">
+                          <img class="step-list__arrow" src="public/assets/images/ico_arrow_left.svg"  alt="Arrow left">
+                          <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
+                        </div>
+                        <div class="step-list__text">
+                            USAnchor’s <strong>Transfer Server</strong> responds with instructions for depositing into USAnchor’s bank account.
+                        </div>
+                      </li>
+                      <li class="step-list__bullet">Laura’s wallet displays deposit instructions.</li>
+                      <li class="step-list__bullet">Laura sends funds to USAnchor's account via ACH, wire, or whatever method USAnchor supports. </li>
+                      <li class="step-list__bullet">That transfer happens on a traditional banking system, so it can take a few days.</li>
+                      <li>
+                        <div class="step-list__icons">
+                          <img class="step-list__icon" src="public/assets/images/ico_phone.png" srcset="public/assets/images/ico_phone.png 1x, public/assets/images/ico_phone@2x.png 2x" alt="Phone icon">
+                          <img class="step-list__arrow" src="public/assets/images/ico_arrow_right.svg"  alt="Arrow right">
+                          <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
+                        </div>
+                        <div class="step-list__text">
+                          USAnchor detects Laura’s deposit as it arrives and transfers USD tokens to her wallet’s Stellar account. 
+                        </div>
+                      </li>
+                      <li class="step-list__bullet">That transfer happens on the Stellar network, so it just takes a few seconds.</li>
                     </ul>
                   </div>
                 </div>
@@ -321,7 +375,7 @@
                 
                 <div class="step-section">
                   <div class="card steps-card"  id="step2a">
-                    <h4>Laura starts transfer</h4>
+                    <h4>Laura makes the payment</h4>
                     <ul class="steps-list">
                       <li class="step-list__bullet">Using her funded wallet, Laura specifies the amount of USD she’d like to send, and the currency Victor would like to receive, BRL.</li>
                     </ul>
@@ -340,7 +394,7 @@
                           <img class="step-list__icon" src="public/assets/images/ico_stellar.png" srcset="public/assets/images/ico_stellar.png 1x, public/assets/images/ico_stellar@2x.png 2x" alt="Stellar icon">
                         </div>
                         <div class="step-list__text">
-                            The wallet executes a pathpayment on the Stellar network, which debits USD from Laura’s account, converts it to BRL using the built-in network orderbooks, and credits Victor with that BRL, all in a single transaction.
+                          The wallet executes a pathpayment on the Stellar network, which debits USD from Laura’s account, converts it to BRL using the built-in network orderbooks, and credits Victor with that BRL, all in a single transaction.
                         </div>
                       </li>
                     </ul>
@@ -349,15 +403,14 @@
               
                 <div class="step-section">
                   <div class="card steps-card"  id="step2c">
-                    <h4>Transfer is complete</h4>
+                    <h4>Payment is complete</h4>
                     <ul class="steps-list">
-                      <li class="step-list__bullet">Victor sees the BRL in his wallet app</li>
+                      <li class="step-list__bullet">Victor gets the BRL in his wallet app a few seconds later.</li>
                     </ul>
                     </ul>
                   </div>
                 </div>
               </div><!-- End of step 2 -->
-
 
               <!-- 
             
@@ -381,7 +434,8 @@
                   <div class="card steps-card"  id="step3a"> 
                     <h4>Victor starts his withdrawal</h4>
                     <ul class="steps-list">
-                      <li class="step-list__bullet">Victor opens his wallet app and enters the amount of BRL he’d like to withdraw. He provides information about his Brazilian bank account, which is where he will receive the funds.</li>
+                      <li class="step-list__bullet">Victor opens his wallet app and enters the amount of BRL he’d like to withdraw.</li>
+                      <li class="step-list__bullet">He enters information about his Brazilian bank account, which is where he will receive the funds</li>
                       <li>
                         <div class="step-list__icons">
                           <img class="step-list__icon" src="public/assets/images/ico_phone2.png" srcset="public/assets/images/ico_phone2.png 1x, public/assets/images/ico_phone2@2x.png 2x" alt="Phone icon">
@@ -389,7 +443,27 @@
                           <img class="step-list__icon" src="public/assets/images/ico_anchor2.png" srcset="public/assets/images/ico_anchor2.png 1x, public/assets/images/ico_anchor2@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                          The wallet pings AnchorBrazil’s <strong>Transfer Server</strong> to pass along Victor’s withdrawal request and bank account info.
+                          The wallet pings AnchorBrazil’s <strong>Transfer Server</strong> that it requires an authenticated user session to proceed
+                        </div>
+                      </li>
+                      <li>
+                        <div class="step-list__icons">
+                          <img class="step-list__icon" src="public/assets/images/ico_phone2.png" srcset="public/assets/images/ico_phone2.png 1x, public/assets/images/ico_phone2@2x.png 2x" alt="Phone icon">
+                          <img class="step-list__arrow" src="public/assets/images/ico_arrow_right.svg"  alt="Arrow right">
+                          <img class="step-list__icon" src="public/assets/images/ico_anchor2.png" srcset="public/assets/images/ico_anchor2.png 1x, public/assets/images/ico_anchor2@2x.png 2x" alt="Anchor icon">
+                        </div>
+                        <div class="step-list__text">
+                          The wallet pings AnchorBrazil’s <strong>WEB_AUTH_ENDPOINT</strong>, goes through challenge/response, receives a JWT token to authenticate the user session.
+                        </div>
+                      </li>
+                      <li>
+                        <div class="step-list__icons">
+                          <img class="step-list__icon" src="public/assets/images/ico_phone2.png" srcset="public/assets/images/ico_phone2.png 1x, public/assets/images/ico_phone2@2x.png 2x" alt="Phone icon">
+                          <img class="step-list__arrow" src="public/assets/images/ico_arrow_right.svg"  alt="Arrow right">
+                          <img class="step-list__icon" src="public/assets/images/ico_anchor2.png" srcset="public/assets/images/ico_anchor2.png 1x, public/assets/images/ico_anchor2@2x.png 2x" alt="Anchor icon">
+                        </div>
+                        <div class="step-list__text">
+                          The wallet pings AnchorBrazil’s <strong>Transfer Server</strong> to pass along Victor’s withdrawal request and bank account info
                         </div>
                       </li>
                       <li>
@@ -399,10 +473,10 @@
                           <img class="step-list__icon" src="public/assets/images/ico_anchor.png" srcset="public/assets/images/ico_anchor.png 1x, public/assets/images/ico_anchor@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                            Like AnchorUSA, AnchorBrazil requires KYC info, so it responds with a request detailing the required KYC fields.
+                            Like USAnchor, AnchorBrazil requires KYC info, so it responds with a request detailing the required KYC fields
                         </div>
                       </li>
-                      <li class="step-list__bullet">The wallet interface presents that info to Victor in a friendly way.</li>
+                      <li class="step-list__bullet">The wallet prompts Victor to enter KYC info.</li>
                     </ul>
                   </div>
                 </div>
@@ -428,7 +502,7 @@
                           <img class="step-list__icon" src="public/assets/images/ico_anchor2.png" srcset="public/assets/images/ico_anchor2.png 1x, public/assets/images/ico_anchor2@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                            When Victor passes AnchorBrazil’s KYC check, his wallet pings AnchorBrazil's Transfer Server again.
+                            When Victor passes AnchorBrazil’s KYC check, his wallet pings AnchorBrazil's <strong>Transfer Server</strong> again.
                         </div>
                       </li>
                       <li>
@@ -438,7 +512,7 @@
                           <img class="step-list__icon" src="public/assets/images/ico_anchor2.png" srcset="public/assets/images/ico_anchor2.png 1x, public/assets/images/ico_anchor2@2x.png 2x" alt="Anchor icon">
                         </div>
                         <div class="step-list__text">
-                            AnchorBrazil’s Transfer Server responds with AnchorBrazil’s Stellar address.
+                            AnchorBrazil’s <strong>Transfer Server</strong> responds with AnchorBrazil’s Stellar address.
                         </div>
                       </li>
                       <li>
@@ -448,11 +522,17 @@
                           <img class="step-list__icon" src="public/assets/images/ico_stellar.png" srcset="public/assets/images/ico_stellar.png 1x, public/assets/images/ico_stellar@2x.png 2x" alt="Stellar icon">
                         </div>
                         <div class="step-list__text">
-                            Victor’s wallet sends the specified amount of BRL tokens to AnchorBrazil’s Stellar address. This transaction happens on the Stellar network, and only takes a few seconds.
+                            Victor’s wallet sends the specified amount of BRL tokens to AnchorBrazil’s Stellar address.
                         </div>
                       </li>
                       <li class="step-list__bullet">
-                        AnchorBrazil transfers an equivalent amount of BRL from their bank account to Victor’s bank account via ACH. That transfer happens on a traditional banking system, so it can take a few days.
+                        This transaction happens on the Stellar network, and only takes a few seconds.
+                      </li>
+                      <li class="step-list__bullet">
+                        AnchorBrazil transfers an equivalent amount of BRL from their bank account to Victor’s bank account via ACH.
+                      </li>
+                      <li class="step-list__bullet">
+                        That transfer happens on a traditional banking system, so it can take a few days.
                       </li>
                     </ul>
                   </div>

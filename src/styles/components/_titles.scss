@@ -4,21 +4,35 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 54/16 + rem;
+    font-size: 45/16 + rem;
     margin-bottom: $spacing-xl;
     letter-spacing: -1 / 16 + rem;
+
+    @media only screen and (min-width: $break-md) {
+        font-size: 54/16 + rem;
+    }
 }
 
 h2 {
-    font-size: 40/16 + rem;
-    margin-bottom: $spacing-xl;
-    margin-top: $spacing-xxl;
+    font-size: 32/16 + rem;
+    margin-bottom: $spacing-l;
+    margin-top: $spacing-xl;
+
+    @media only screen and (min-width: $break-md) {
+        margin-bottom: $spacing-xl;
+        margin-top: $spacing-xxl;
+        font-size: 40/16 + rem;
+    }
 }
 
 h3, h4 {
-    font-size: 26/16 + rem;
+    font-size: 22/16 + rem;
     margin-bottom: $spacing-m;
     margin-top: 0;
+
+    @media only screen and (min-width: $break-md) {
+        font-size: 26/16 + rem;
+    }
 }
 
 // Icon + title 
@@ -30,9 +44,9 @@ h3, h4 {
     .icon-title__icon-circle {
         background-color: $primary-color;
         border-radius: 50%;
-        min-width: 50/16 + rem;
-        height: 50/16 + rem;
-        font-size: 24/16 + rem;
+        min-width: 44/16 + rem;
+        min-height: 44/16 + rem;
+        font-size: 20/16 + rem;
         font-weight: bold;
         color: $white;
         display: flex;
@@ -40,13 +54,17 @@ h3, h4 {
         justify-content: center;
     }
 
-    .icon-title__icon {
-
-    }
-
     .icon-title__title {
         margin: 0;
         margin-left: $spacing-xs;
+    }
+
+    @media only screen and (min-width: $break-md) {
+        .icon-title__icon-circle {
+            font-size: 24/16 + rem;
+            min-width: 50/16 + rem;
+            min-height: 50/16 + rem;
+        }
     }
 }
 

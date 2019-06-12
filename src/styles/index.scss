@@ -20,6 +20,8 @@ $primary-color: $yellow;
 // typeface
 $typeface: SuisseIntl, Helvetica, Arial, Sans-Serif;
 
+
+
 @font-face {
   font-family: 'SuisseIntl';
   src: url('/public/assets/fonts/SuisseIntl-SemiBold.eot'); /* IE9 Compat Modes */
@@ -44,12 +46,19 @@ $typeface: SuisseIntl, Helvetica, Arial, Sans-Serif;
   text-rendering: optimizeLegibility;
 }
 
+
+// Breakpoints
+$break-lg: 75em;
+$break-md: 64em;
+$break-sm: 48em;
+$break-xs: 30em;
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-size: 1rem;
+  font-size: 15/16 + rem;
   color: $black-80;
   background-color: $white-90;
   font-family: $typeface;
@@ -67,6 +76,10 @@ a {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 // Vendor
 @import "/vendor/normalize";
 
@@ -75,6 +88,7 @@ a {
 @import "/layout/grid";
 @import "/layout/spacing";
 @import "/layout/layout";
+@import "/layout/helpers";
 
 
 // Components
