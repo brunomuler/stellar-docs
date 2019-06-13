@@ -1,4 +1,4 @@
-$bullet-size: 12 /16 + rem;
+$bullet-size: 7 /16 + rem;
 $bullet-color: $primary-color;
 
 .bullet-list {
@@ -8,7 +8,7 @@ $bullet-color: $primary-color;
 
     li {
         list-style: none;
-        padding-left: 22px;
+        padding-left: 15px;
         position: relative;
         line-height: 22/16 + rem;
 
@@ -26,7 +26,8 @@ $bullet-color: $primary-color;
         display: block;
         position: absolute;
         left: 0;
-        top:  4/16 + rem;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -54,8 +55,8 @@ $bullet-color: $primary-color;
         }
     }
 
-    li.step-list__bullet {
-        padding-left: 22px;
+    li {
+        padding-left: 15px;
         position: relative;
         line-height: 22/16 + rem;
 
@@ -68,7 +69,8 @@ $bullet-color: $primary-color;
             display: block;
             position: absolute;
             left: 0;
-            top:  4/16 + rem;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
     

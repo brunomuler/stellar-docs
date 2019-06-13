@@ -12,5 +12,6 @@ var sidebar = new StickySidebar('#sidebar', {
 
 setTimeout(function () {
     window.dispatchEvent(new Event('resize'));
+    sidebar.updateSticky();
 }, 50)
 
