@@ -13,7 +13,7 @@ $bullet-color: $primary-color;
         line-height: 22/16 + rem;
 
         &:not(:last-child) {
-            margin-bottom: $spacing-s;
+            margin-bottom: $spacing-xs;
         }
     }
 
@@ -26,7 +26,7 @@ $bullet-color: $primary-color;
         display: block;
         position: absolute;
         left: 0;
-        top:  8/16 + rem;
+        top:  7/16 + rem;
     }
 }
 
@@ -42,7 +42,7 @@ $bullet-color: $primary-color;
         list-style: none;
         display: flex;
         flex-direction: column;
-        margin-bottom: $spacing-m;
+        margin-bottom: $spacing-s;
         padding-left: 15px;
         position: relative;
         line-height: 22/16 + rem;
@@ -53,25 +53,20 @@ $bullet-color: $primary-color;
 
         @media only screen and (min-width: $break-xs) {
             flex-direction: row;
-            align-items: center;
         }
 
-        &:before {
-            content:"";
-            width: $bullet-size;
-            height: $bullet-size;
-            background-color: $primary-color;
-            border-radius: 50%;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
+        
         &.step-list__bullet {
             &:before {
-                top:  8/16 + rem;
+                content:"";
+                width: $bullet-size;
+                height: $bullet-size;
+                background-color: $primary-color;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top:  7/16 + rem;
                 transform: none;
             }
 
@@ -83,16 +78,43 @@ $bullet-color: $primary-color;
     }
     
     .step-list__icon {
-        min-width: 40px;
+        width: 40px;
+        height: 65px;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 100%;
+            max-width: none;
+        }
     }
     
     .step-list__arrow {
         padding: 0 $spacing-xxs;
+        padding-bottom: $spacing-m;
         min-width: 40px;
     }
 
     .step-list__text {
         margin-top: $spacing-xxs;
+        padding-left: 15px;
+        position: relative;
+        line-height: 22/16 + rem;
+
+        &:before {
+            content:"";
+            width: $bullet-size;
+            height: $bullet-size;
+            background-color: $primary-color;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top:  7/16 + rem;
+            transform: none;
+        }
 
         @media only screen and (min-width: $break-xs) {
             margin-top: 0;
