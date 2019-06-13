@@ -24,6 +24,14 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'cross-border-payments',
+      template: Path.resolve(__dirname, '../src/index.html')
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'integrating-sdex',
+      template: Path.resolve(__dirname, '../src/index2.html')
     })
   ],
   resolve: {
