@@ -1,3 +1,16 @@
 import '../styles/index.scss';
 
-console.log('webpack starterkit');
+import {stickysidebar} from 'sticky-sidebar';
+
+var sidebar = new StickySidebar('#sidebar', {
+    containerSelector: '#main-content',
+    innerWrapperSelector: '.sidebar__inner',
+    topSpacing: 20,
+    bottomSpacing: 20
+});
+
+
+setTimeout(function () {
+    window.dispatchEvent(new Event('resize'));
+}, 50)
+

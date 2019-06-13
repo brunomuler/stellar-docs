@@ -1,9 +1,20 @@
 $bullet-size: 6/16 + rem;
 
+.sidebar{
+    will-change: min-height;
+    padding: 0;
+}
+
+.sidebar__inner{
+    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
+
 .outline {
     margin: 0;
     padding: 0;
-    margin-right: $spacing-s;
+    padding-right: $spacing-s;
 
     a {
         text-decoration: none;
