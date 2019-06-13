@@ -38,25 +38,31 @@ $bullet-color: $primary-color;
     margin: 0;
     padding: 0;
 
-    li{
+    li {
+        border-bottom: 0.5px solid #f1f1f1;
+        padding-bottom: $spacing-xs;
         list-style: none;
         display: flex;
         flex-direction: column;
-        margin-bottom: $spacing-s;
-        padding-left: 15px;
+        margin-bottom: $spacing-xs;
         position: relative;
         line-height: 22/16 + rem;
 
         &:last-child {
             margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
         }
 
         @media only screen and (min-width: $break-xs) {
             flex-direction: row;
+            padding-left: 15px;
         }
 
         
         &.step-list__bullet {
+            padding-left: 15px;
+
             &:before {
                 content:"";
                 width: $bullet-size;
@@ -71,6 +77,7 @@ $bullet-color: $primary-color;
             }
 
         }
+        
     }
     
     .step-list__icons {
