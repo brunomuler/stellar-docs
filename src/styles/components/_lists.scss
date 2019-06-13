@@ -43,6 +43,7 @@ $bullet-color: $primary-color;
         padding-bottom: $spacing-xs;
         list-style: none;
         display: flex;
+        align-items: center;
         flex-direction: column;
         margin-bottom: $spacing-xs;
         position: relative;
