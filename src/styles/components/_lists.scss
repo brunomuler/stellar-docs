@@ -26,8 +26,7 @@ $bullet-color: $primary-color;
         display: block;
         position: absolute;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        top:  8/16 + rem;
     }
 }
 
@@ -38,12 +37,15 @@ $bullet-color: $primary-color;
 .steps-list {
     margin: 0;
     padding: 0;
-    
+
     li{
         list-style: none;
         display: flex;
         flex-direction: column;
         margin-bottom: $spacing-m;
+        padding-left: 15px;
+        position: relative;
+        line-height: 22/16 + rem;
 
         &:last-child {
             margin-bottom: 0;
@@ -53,12 +55,6 @@ $bullet-color: $primary-color;
             flex-direction: row;
             align-items: center;
         }
-    }
-
-    li {
-        padding-left: 15px;
-        position: relative;
-        line-height: 22/16 + rem;
 
         &:before {
             content:"";
@@ -71,6 +67,14 @@ $bullet-color: $primary-color;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+        }
+
+        &.step-list__bullet {
+            &:before {
+                top:  8/16 + rem;
+                transform: none;
+            }
+
         }
     }
     
