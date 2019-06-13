@@ -25,11 +25,16 @@ $bullet-size: 6/16 + rem;
         list-style: none;
         font-size: 21/16 + rem;
 
+        &.active > a {
+            transition: color 0.3s ease-out;
+            color: $black;
+        }
+
         li {
             font-size: 14/16 + rem;
             position: relative;
             padding-left: 18px;
-
+            
             a {
                 font-weight: normal;
                 padding-bottom: $spacing-xs;
@@ -45,6 +50,14 @@ $bullet-size: 6/16 + rem;
                 position: absolute;
                 left: 0;
                 top:  4/16 + rem;
+                transition: all 0.3s ease-out;
+            }
+            
+            &.active {
+                &:before {
+                    border: 1.5px solid $primary-color;
+                    background-color: $primary-color;
+                }
             }
         }
     }
