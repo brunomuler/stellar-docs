@@ -26,11 +26,11 @@ module.exports = {
       template: Path.resolve(__dirname, '../src/index.html')
     }),
     new HtmlWebpackPlugin({
-      filename: 'cross-border-payments',
+      filename: 'cross-border-payments/index.html',
       template: Path.resolve(__dirname, '../src/index.html')
     }),
     new HtmlWebpackPlugin({
-      filename: 'integrating-sdex',
+      filename: 'integrating-sdex/index.html',
       template: Path.resolve(__dirname, '../src/index2.html')
     })
   ],
