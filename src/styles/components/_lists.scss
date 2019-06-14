@@ -62,6 +62,7 @@ $bullet-color: $primary-color;
 
         
         &.step-list__bullet {
+            display: inherit;
             padding-left: 15px;
 
             &:before {
